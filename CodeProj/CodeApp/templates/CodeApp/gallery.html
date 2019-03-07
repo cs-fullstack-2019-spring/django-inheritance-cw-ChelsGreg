@@ -1,0 +1,21 @@
+<!--TO EXTEND BASE-->
+{% extends 'CodeApp/base.html' %}
+{% load static %}
+
+
+{% block header %}
+<h3>Gallery</h3>
+{% endblock header %}
+
+
+{% block content %}
+<!--IMAGES FOR GALLERY-->
+<img class="gallery" src="{% static 'CodeApp/images/class.jpeg' %}">
+<img class="gallery" src="{% static 'CodeApp/images/helper.jpg' %}">
+
+{% endblock content %}
+
+{% block links %}
+<img class="gallery" src="{% static 'CodeApp/images/maxresdefault.jpg' %}">
+<img class="gallery" src="{% static 'CodeApp/images/meka.jpeg' %}">
+{% endblock links %}

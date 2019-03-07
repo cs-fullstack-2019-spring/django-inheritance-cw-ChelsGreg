@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CodeApp/css/css.css' %}">
+
+</head>
+<body>
+
+<nav>
+    <a href="{% url 'index' %}"><img class="img" src="{% static 'CodeApp/images/codecrew' %}"></a>
+    <p><a href="{% url 'aboutus' %}">About Us</a>
+        <a href="{% url 'gallery' %}">Gallery</a>
+        <a href="{% url 'resources' %}">Resources</a>
+        <a href="{% url 'contact' %}">Contact</a></p>
+    <hr/>
+</nav>
+
+<div class="container">
+
+    <header>
+    {% block header %}
+
+
+    {% endblock header %}
+    </header>
+
+    <section>
+    {% block content %}
+
+
+    {% endblock content %}
+    </section>
+
+
+    <article>
+        {% block links %}
+
+        {% endblock links %}
+    </article>
+
+
+</div>
+
+</body>
+</html>
